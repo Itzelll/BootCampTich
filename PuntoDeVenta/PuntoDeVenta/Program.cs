@@ -10,6 +10,11 @@ namespace PuntoDeVenta
     {
         static void Main(string[] args)
         {
+            Ticket objTicket = new Ticket();
+
+            objTicket.listArticulos.Add(new ArticuloTich());
+            objTicket.Imprimir();
+            Console.ReadKey();
         }
     }
 }
