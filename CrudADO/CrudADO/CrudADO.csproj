@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{86617810-3D61-4952-8C0B-21554B9D0F41}</ProjectGuid>
+    <ProjectGuid>{82796083-8DF5-421F-B1CF-4382D3A86907}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PuntoDeVenta</RootNamespace>
-    <AssemblyName>PuntoDeVenta</AssemblyName>
+    <RootNamespace>CrudADO</RootNamespace>
+    <AssemblyName>CrudADO</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,12 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArticuloNet.cs" />
-    <Compile Include="ArticuloTich.cs" />
-    <Compile Include="IArticulo.cs" />
+    <Compile Include="ADOEstatus.cs" />
+    <Compile Include="Estatus.cs" />
+    <Compile Include="ICRUDEstatus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ticket.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
