@@ -13,6 +13,7 @@ namespace PuntoDeVenta
             Ticket objTicket = new Ticket();
 
             objTicket.listArticulos.Add(new ArticuloTich());
+            objTicket.listArticulos.Add(new ArticuloNet());
             objTicket.Imprimir();
             Console.ReadKey();
         }
